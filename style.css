@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+.custom-container {
+    width: 1280px !important;
+    padding: 0 !important;
+}
+
+/* NAVBAR */
+
+
+.navbar {
+    position: fixed;
+    font-size: 14px;
+    background-color: transparent;
+    color: #55514e !important;
+    padding: 0 !important;
+    border-bottom: 3px solid #f4f4f4;
+    height: 80px !important;
+}
+
+.navbar-list {
+    display: flex;
+    list-style: none;
+    padding-right: 50px;
+}
+
+#logo {
+    margin: 0px;
+    padding: 0px 40px 15px 55px;
+}
+
+.dropdown-toggle {
+    background: transparent !important;
+    border: 0 !important;
+    color: #55514e !important;
+    border-radius: 0px !important;
+    font-size: 14px !important;
+}
+
+.dropdown-toggle:hover {
+    background-color: #262a32 !important;
+    color: #9ca4ab !important;
+    transition: 0s !important;
+    border-bottom: 3px solid #6cb043 !important;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    background-color: #262a32 !important;
+    color: #f4f4f4 !important;
+    border-radius: 0px !important;
+    transition: 0s !important;
+    width: 1280px !important;
+    left: -391px;
+}
+
+.dropdown-container {
+    width: 100%;
+    display: flex;
+}
+
+.dropdown-first {
+    margin: 40px 0px 40px 50px;
+    flex-direction: column;
+    width: 60%;
+    flex-wrap: wrap;
+}
+
+.dropdown-second {
+    margin: 40px 0px;
+    flex-direction: column;
+    width: 18%;
+    flex-wrap: wrap;
+}
+
+.dropdown-image {
+    margin: 40px 50px 40px 0px;
+    width: 22%;
+}
+
+.dropdown-title {
+    padding: 0 0 10px 10px;
+    display: flex;
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+.dropdown-list , .dropdown-shortlist {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 240px;
+}
+
+.dropdown-list a {
+    text-decoration: none;
+    color: #f4f4f4;
+    padding: 3px 10px;
+}
+
+.dropdown-container a:hover {
+    color: #f4f4f4;
+}
+
+.dropdown-shortlist a {
+    text-decoration: none;
+    color: #f4f4f4;
+    padding: 3px 10px;
+}
+
+li {
+    text-decoration: none !important;
+}
+
+.services-button {
+    height: 63.6px;
+    width: 124.6px;
+    margin-top: 15px;
+    display: flex !important;
+    padding-top: 11px !important;
+}
+
+.services-text {
+    padding-right: 20px;
+    padding-left: 15px;
+    font-weight: 600 !important;
+    opacity: 0.8;
+}
+
+.dropdown-toggle::after {
+    margin-top: 10px;
+    opacity: 0.3;
+}
+.disabled-menus {
+    padding: 27px 15px 0px 15px !important;
+    font-weight: 600 !important;
+    opacity: 0.8;
+}
+
+.languages, .currency {
+    height: 63.6px;
+    margin-top: 15px;
+    display: flex !important;
+    padding-top: 12px !important;
+}
+
+.languages {
+    margin-left: 30px;
+}
+
+.currency {
+    margin-right: 30px;
+}
+
+.button-icon {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #B1B0AE;
+}
+
+.navbar-icon {
+    display: flex;
+    padding: 0 15px 10px 15px;
+}
+
+/* INTRO SECTION */
+
+.intro-section {
+    width: 1280px;
+    height: 560px;
+    display: flex;
+    padding:0 30px;
+}
+
+.carousel-wrapper {
+    padding: 25px 25px;
+}
+
+.carousel-item div {
+    background-size: cover;
+    background-position: center;
+    height: 504px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.slide {
+    width: 870px;
+    height: 504px !important;
+    border-radius: 10px;
+}
+
+.carousel-indicators {
+    padding-bottom: 30px !important;
+}
+
+.carousel-indicators button {
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+}
+
+.carousel-right-section {
+    padding: 25px 25px;
+}
+
+.carousel-right-section img {
+    border-radius: 8px;
+}
+
+.social-media-section {
+    flex-direction: column;
+    padding-top: 40px;
+    text-align: center;
+    color: #55514e;
+}
+
+.social-media-section h6 {
+    font-size: 18px;
+}
+
+.social-media-section p {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* SHARED */
+
+.btn:focus {
+    box-shadow: none !important;
+}
+
