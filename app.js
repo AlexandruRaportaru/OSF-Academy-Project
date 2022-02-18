@@ -1,16 +1,22 @@
-const loadmore = document.querySelector('.btn');
-    let currentItems = 2;
-    loadmore.addEventListener('click', (e) => {
+
+// LOAD MORE BUTTON //
+
+const loadmore = document.querySelector('.loadMore');
+    let currentItems = 8;
+    loadmore.addEventListener('click', (event) => {
         const elementList = [...document.querySelectorAll('.products .products-image')];
-        for (let i = currentItems; i < currentItems + 2; i++) {
+        debugger
+        for (let i = currentItems; i < currentItems + 4;) {
             if (elementList[i]) {
                 elementList[i].style.display = 'block';
             }
         }
-        currentItems += 2;
+        currentItems += 8;
 
         // Load more button will be hidden after list fully loaded
         if (currentItems >= elementList.length) {
             event.target.style.display = 'none';
         }
     })
+
+//

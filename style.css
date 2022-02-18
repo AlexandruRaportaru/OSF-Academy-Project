@@ -191,7 +191,7 @@ li {
     border-radius: 10px;
 }
 
-.slide {
+.carousel {
     width: 870px;
     height: 504px !important;
     border-radius: 10px;
@@ -339,6 +339,78 @@ li {
     justify-items: center;
     padding-bottom: 50px;
     align-items: center;
+    overflow: hidden;
+}
+
+.products-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.products-image div {
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.special-product {
+    display: flex;
+    justify-content: center;
+}
+
+.products-image div p {
+    margin-bottom: 16px;
+    font-weight: 550;
+    color: #2C3E50;
+}
+
+.products-image .special {
+    padding-bottom: 37px;
+}
+
+.products-image .btn-group {
+    padding-bottom: 10px;
+    display: flex;
+}
+
+.products-image .left {
+    width: 90px;
+    color: #32C777 !important;
+}
+
+.products-image .right {
+    width: 110px;
+    color: black;
+}
+
+.products-image .right:hover {
+    background-color: #6cb043;
+    border-color: #6cb043;
+    color: #f4f4f4;
+}
+
+.products-image .left , .products-image .right {
+    border-radius: 30px;
+    border-color: #e6e6e6;
+    font-weight: 600;
+    border-width: 2px;
+}
+
+.products-image .price {
+    font-family: 'Lato', sans-serif;
+}
+
+#message {
+    padding-right: 70px;
+    padding-bottom: 22px;
+}
+
+#message p {
+    color: #f4f4f4;
+    text-align: start;
+    width: 140px;
 }
 
 .loadMoreButton {
@@ -360,6 +432,187 @@ li {
 
 .loadMoreButton .btn span {
     padding: 0 80px;
+}
+
+/* BANNER */
+
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+.banner-text {
+    position: absolute;
+    text-align: center;
+    color:#f4f4f4;
+    padding-top: 155px;
+    letter-spacing: -1.5px;
+}
+
+.banner-text h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.banner-text p{
+    padding-top: 20px;
+}
+
+/* FEATURED PRODUCTS */
+
+.featured-products {
+    background-color: #262a32;
+    text-align: center;
+    padding: 0px 40px 60px 40px;
+}
+
+.featured-products h4 {
+    color: #f4f4f4;
+    padding: 35px 0 0 0;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.featured-products h5 {
+    color: #f4f4f4;
+    font-size: 19px;
+    letter-spacing: -1px;
+}
+
+.slider {
+    width: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+.slider-cell {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.slider-cell div {
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.slider-cell div p {
+    margin-bottom: 16px;
+    font-weight: 550;
+    color:#55514e;
+}
+
+.slider-cell .categories {
+    color: #84BC22;
+    font-weight: bold;
+}
+
+
+/* SERVICES */
+
+.services {
+    background-color: #45413E;
+    display: flex;
+    padding: 55px 55px 40px 55px;
+}
+
+.focus , .method , .knowledge {
+    display: flex;
+    width: 380px;
+}
+
+.services img {
+   height: 85px;
+   padding: 15px 40px 0 0;
+}
+
+.services h6 {
+    font-size: 18px;
+    color: #f4f4f4;
+    font-weight: 600;    
+}
+
+.services p {
+    color: #868380;
+    font-size: 13px;
+}
+
+/* FOOTER */
+
+.footer {
+    margin: 40px 55px 40px 55px;
+    display: flex;
+}
+
+.details {
+    color: #777471;
+    padding-right: 90px;
+}
+
+.footer-products {
+    display: flex;
+    width: 740px;
+}
+
+.footer-categories {
+    width: 600px;
+}
+
+.footer-list-title , .social-media a{
+    text-decoration: none;
+    color: #777471;
+}
+
+.footer-list-title {
+    font-size: 13.5px;
+}
+
+.footer-categories-list , .footer-about-list {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    padding-top: 15px;
+}
+
+.footer-categories-list a {
+    text-decoration: none;
+    color: #777471;
+    padding: 7px 60px 0 0;
+    letter-spacing: -0.5px;
+}
+
+.footer-about-list a {
+    text-decoration: none;
+    color: #777471;
+    padding: 7px 60px 0 0;
+    letter-spacing: -0.5px;
+}
+
+.footer-products a:hover {
+    color: #84BC22;
+}
+
+.social-media a:hover {
+    color: #84BC22;
+}
+
+.details p , .footer-products a {
+    font-size: 13px;
+}
+
+.footer-products a , .social-media a {
+    text-decoration: none;
+}
+
+.social-media a {
+    padding-left: 20px;
 }
 
 /* SHARED */
