@@ -1,0 +1,203 @@
+.main {
+    background-color: #F2EDEA;
+    text-align: center;
+}
+
+.main-subtitle {
+    padding-top: 55px;
+}
+
+.main-subtitle a {
+    text-decoration: none;
+    color: #000000;
+    padding: 0 10px;
+    letter-spacing: -1px;
+}
+
+.main-subtitle a:hover {
+    color:#84BC22;
+}
+
+.main-subtitle span {
+    padding: 0 10px;
+}
+
+.main-title {
+    text-align: center;
+    color: #45413E;
+    font-weight: bold;
+    font-size: 40px;
+    padding-bottom: 35px;
+    padding-top: 5px;
+}
+
+.main-title::before {
+    margin-right: 100px;
+}
+
+.main-title::after {
+    margin-left: 100px;
+}
+
+.main-title::before , .main-title::after {
+    content: "";
+    display: inline-block;
+    background-color: #f4f4f4;
+    height: 2px;
+    width: 405px;
+    margin-bottom: 7.5px;
+}
+
+.filters {
+    height: 165px;
+    width: 1170px;
+    margin-left: 55px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.filters-row {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.filter-box {
+    display: flex;
+    width: 263px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.filter {
+    display: flex;
+}
+
+.form-select {
+    width: 200px !important;
+    border-radius: 30px !important;
+    box-shadow: none !important;
+    cursor: pointer !important;
+    border-color: #55514e !important;
+    border-width: 2px !important;
+}
+
+.colors {
+    display: flex;
+}
+
+.colors .active {
+    border: 2px solid #000000;
+}
+
+.color {
+    border-radius: 50%;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+}
+
+.white {
+    background-color: white;
+}
+
+.aqua {
+    background-color: #43C0CF;
+}
+
+.dark {
+    background-color: #3D402F;
+}
+
+.green {
+    background-color: #4AAF00;
+}
+
+.blue {
+    background-color: #315BBD;
+}
+
+.orange {
+    background-color: #EC6115;
+}
+
+.red {
+    background-color:#DC041D;
+}
+
+.cream {
+    background-color: #EFEAD7;
+}
+
+.main-results {
+    padding-top: 30px;
+}
+
+.services-products {
+    padding: 10px 55px 50px 55px;
+}
+
+.services-products .products {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 28px;
+    justify-items: center;
+    padding-bottom: 50px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.services-products .products-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.services-products .products-image:nth-child(17), 
+.services-products .products-image:nth-child(18),
+.services-products .products-image:nth-child(19),
+.services-products .products-image:nth-child(20) {
+    display: none;
+}
+
+.services-products .products-image div {
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.services-products .products-image div p {
+    margin-bottom: 16px;
+    font-weight: 550;
+    color: #2C3E50;
+}
+
+.services-products .products-image .price {
+    font-family: 'Lato', sans-serif;
+}
+
+.loadMoreServices {
+    display: block;
+    text-align: center;
+}
+
+.loadMoreServices .btn {
+    border-radius: 30px !important;
+    border-color: #84BC22 !important;
+    background-color: #84BC22 !important;
+    color: #f4f4f4 !important;
+    border-width: 2px;
+}
+
+.loadMoreServices .btn:hover {
+    color: #84BC22 !important;
+    background-color: #f4f4f4 !important;
+}
+
+.loadMoreServices .btn span {
+    padding: 0 20px;
+}

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OSF Academy Project</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/Home.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/b08c9dc928.js" crossorigin="anonymous"></script>
@@ -13,11 +13,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+    <link href="https://npmcdn.com/flickity@2/dist/flickity.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js"></script>
 </head>
 <body>
-    <div class="container custom-container">
+    <div class="navbar-wrapper">
         <nav class="navbar navbar-light">
-            <a href="#home" id="logo"><img src="images\logo.png"></a>
+            <a href="./Home.html" id="logo"><img src="images\logo.png"></a>
             <ul class="navbar-list">
                 <li>
                     <div class="dropdown">
@@ -27,45 +29,45 @@
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                             <div class="dropdown-container">
                                 <div class="dropdown-first">
-                                    <a href="#error" class="dropdown-title"><b>PRODUCT CATEGORIES</b></a>
+                                    <h6 class="dropdown-title"><b>PRODUCT CATEGORIES</b></h6>
                                     <div class="dropdown-list"> 
-                                        <a href="#error">Accesories</a>
-                                        <a href="#error">Alcohol</a>
-                                        <a href="#error">Art</a>
-                                        <a href="#error">Books</a>
-                                        <a href="#error">Drink</a>
-                                        <a href="#error">Electronics</a>
-                                        <a href="#error">Flowers & Plants</a>
-                                        <a href="#error">Food</a>
-                                        <a href="#error">Gadgets</a>
-                                        <a href="#error">Garden</a>
-                                        <a href="#error">Grocery</a>
-                                        <a href="#error">Home</a>
-                                        <a href="#error">Jewelry</a>
-                                        <a href="#error">Kids & Baby</a>
-                                        <a href="#error">Men's Fashion</a>
-                                        <a href="#error">Mobile</a>
-                                        <a href="#error">Motorcycles</a>
-                                        <a href="#error">Movies</a>
-                                        <a href="#error">Music</a>
-                                        <a href="#error">Office</a>
-                                        <a href="#error">Pets</a>
-                                        <a href="#error">Romantic</a>
-                                        <a href="#error">Sport</a>
-                                        <a href="#error">Toys</a>
+                                        <a href="./Error.html">Accesories</a>
+                                        <a href="./Error.html">Alcohol</a>
+                                        <a href="./Error.html">Art</a>
+                                        <a href="./Error.html">Books</a>
+                                        <a href="./Error.html">Drink</a>
+                                        <a href="./Error.html">Electronics</a>
+                                        <a href="./Error.html">Flowers & Plants</a>
+                                        <a href="./Error.html">Food</a>
+                                        <a href="./Error.html">Gadgets</a>
+                                        <a href="./Error.html">Garden</a>
+                                        <a href="./Error.html">Grocery</a>
+                                        <a href="./Error.html">Home</a>
+                                        <a href="./Error.html">Jewelry</a>
+                                        <a href="./Error.html">Kids & Baby</a>
+                                        <a href="./Error.html">Men's Fashion</a>
+                                        <a href="./Error.html">Mobile</a>
+                                        <a href="./Error.html">Motorcycles</a>
+                                        <a href="./Error.html">Movies</a>
+                                        <a href="./Error.html">Music</a>
+                                        <a href="./Error.html">Office</a>
+                                        <a href="./Error.html">Pets</a>
+                                        <a href="./Error.html">Romantic</a>
+                                        <a href="./Error.html">Sport</a>
+                                        <a href="./Error.html">Toys</a>
                                     </div>
                                 </div>
                                 <div class="dropdown-second">
-                                    <a href="#error" class="dropdown-title"><b>SALE</b></a>
+                                    <h6 class="dropdown-title"><b>SALE</b></h6>
                                     <div class="dropdown-shortlist">
-                                        <a href="#error">Accesories</a>
-                                        <a href="#error">Alcohol</a>
-                                        <a href="#error">Art</a>
-                                        <a href="#error">Books</a>
-                                        <a href="#error">Drink</a>
-                                        <a href="#error">Electronics</a>
-                                        <a href="#error">Flowers & Plants</a>
-                                        <a href="#error">Food</a>
+                                        <a href="./Error.html">Accesories</a>
+                                        <a href="./Error.html">Alcohol</a>
+                                        <a href="./Error.html">Art</a>
+                                        <a href="./Error.html">Books</a>
+                                        <a href="./Error.html">Drink</a>
+                                        <a href="./Error.html">Electronics</a>
+                                        <a href="./Error.html">Flowers & Plants</a>
+                                        <a href="./Error.html">Food</a>
                                     </div>
                                 </div>
                                 <div class="dropdown-image">
@@ -98,7 +100,9 @@
                 <li class="navbar-icon"><button class="button-icon"><i class="fa-solid fa-bag-shopping"></i></button></li>
             </ul>
         </nav>
-        <!--INTRO-SECTION-->
+    </div>
+    <!--INTRO-SECTION-->
+    <div class="container custom-container">
         <div class="intro-section">
             <div class="carousel-wrapper">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -113,7 +117,7 @@
                                 <div class="carousel-text-first">
                                     <h1>Control and manage any <br> device with cloud solutions</h1>
                                     <p>Improve business performance and the user experience <br> with the right mix of IoT technology and processes</p>
-                                    <a href=""><button type="button" class="btn btn-outline-secondary"><span>VIEW MORE</span></button></a>
+                                    <a href="Services.html"><button type="button" class="btn btn-outline-secondary"><span>VIEW MORE</span></button></a>
                                 </div>
                             </div>
                         </div>
@@ -122,7 +126,7 @@
                                 <div class="carousel-text-second">
                                     <h1>Control and manage any <br> device with cloud solutions</h1>
                                     <p>Improve business performance and the user experience <br> with the right mix of IoT technology and processes</p>
-                                    <a href=""><button type="button" class="btn btn-outline-secondary"><span>VIEW MORE</span></button></a>
+                                    <a href="Services.html"><button type="button" class="btn btn-outline-secondary"><span>VIEW MORE</span></button></a>
                                 </div>
                             </div>
                         </div>
@@ -131,7 +135,7 @@
                                 <div class="carousel-text-third">
                                     <h1>Control and manage any <br> device with cloud solutions</h1>
                                     <p>Improve business performance and the user experience <br> with the right mix of IoT technology and processes</p>
-                                    <a href=""><button type="button" class="btn btn-outline-secondary"><span>VIEW MORE</span></button></a>
+                                    <a href="Services.html"><button type="button" class="btn btn-outline-secondary"><span>VIEW MORE</span></button></a>
                                 </div>
                             </div>
                         </div>
@@ -211,31 +215,31 @@
                     </div>
                 </div>
                 <div class="products-image">
-                    <img src="images/9.png">
+                    <img src="images/1.png">
                     <div>
-                        <p>Kristina Dam Oak Table With White <br> Marble Top</p> 
-                        <p class="price">$ 799.55</p>
+                        <p>Our awesome product 1</p> 
+                        <p class="price">$ 149.90</p>
                     </div>
                 </div>
                 <div class="products-image">
-                    <img src="images/10.png">
+                    <img src="images/3.png">
                     <div>
-                        <p>EAMES x CAST + Crew - Custom <br> Powder Coated</p>
-                        <p class="price">$ 799.55</p>
+                        <p>Our awesome product 2</p>
+                        <p class="price">$ 249.90</p>
                     </div>
                 </div>
                 <div class="products-image">
                     <img src="images/11.png">
                     <div>
-                        <p>Activate Facial Mask and Charcoal <br> Soap</p>
-                        <p class="price">$ 129.55</p>
+                        <p>Our awesome product 3</p>
+                        <p class="price">$ 69.90</p>
                     </div>
                 </div>
                 <div class="products-image">
                     <img src="images/12.png">
                     <div>
-                        <p>Vidra Cork Stool B, Cork - Design <br> Within Reach</p>
-                        <p class="price">$ 299.99</p>
+                        <p>Our awesome product 4</p>
+                        <p class="price">$ 179.90</p>
                     </div>
                 </div>
             </div>
@@ -255,51 +259,76 @@
         <div class="featured-products">
             <h4>Featured Products</h4>
             <h5>Unde omnis iste natus error sit voluptatem</h5>
-            <div class="slider">
-                <a href="" class="slider-cell">
-                    <img src="images/post 1.png" alt="1">
-                    <div>
-                        <p>Kristina Dam Oak Table <br> With White Marble</p>
-                        <p class="categories">Awesome</p>
+            <div class="timeline">
+                <span class="backslash">///</span>
+                <div class="carousel carousel-main" data-flickity='{"cellAlign": "left", "contain": true}'>
+                    <div class="carousel-cell">
+                        <img src="images/post 1.png" alt="1">
+                        <div>
+                            <p>Kristina Dam Oak Table <br> With White Marble</p>
+                            <p class="categories">Awesome</p>
+                        </div>
                     </div>
-                </a>
-                <a href="" class="slider-cell">
-                    <img src="images/post 2.png" alt="2">
-                    <div>
-                        <p>Kristina Dam Oak Table <br> With White Marble</p>
-                        <p class="categories">Marketing</p>
+            
+                    <div class="carousel-cell">
+                        <img src="images/post 2.png" alt="2">
+                        <div>
+                            <p>Kristina Dam Oak Table <br> With White Marble</p>
+                            <p class="categories">Marketing</p>
+                        </div>
                     </div>
-                </a>
-                <a href="" class="slider-cell">
-                    <img src="images/post 3.png" alt="3">
-                    <div>
-                        <p>Kristina Dam Oak Table <br> With White Marble</p>
-                        <p class="categories">Awesome</p>
+            
+                    <div class="carousel-cell">
+                        <img src="images/post 3.png" alt="3">
+                        <div>
+                            <p>Kristina Dam Oak Table <br> With White Marble</p>
+                            <p class="categories">Awesome</p>
+                        </div>
                     </div>
-                </a>
-                <a href="" class="slider-cell">
-                    <img src="images/post 4.png" alt="4">
-                    <div>
-                        <p>Hezy Theme</p>
-                        <p class="categories">Marketing</p>
+            
+                    <div class="carousel-cell">
+                        <img src="images/post 4.png" alt="4">
+                        <div>
+                            <p>Hezy Theme</p>
+                            <p class="categories">Marketing</p>
+                        </div>
                     </div>
-                </a>
-                <a href="" class="slider-cell">
-                    <img src="images/post 1.png" alt="5">
-                    <div>
-                        <p>Kristina Dam Oak Table <br> With White Marble</p>
-                        <p class="categories">Awesome</p>
+
+                    <div class="carousel-cell">
+                        <img src="images/post 1.png" alt="5">
+                        <div>
+                            <p>Kristina Dam Oak Table <br> With White Marble</p>
+                            <p class="categories">Awesome</p>
+                        </div>
                     </div>
-                </a>
-                <a href="" class="slider-cell">
-                    <img src="images/post 2.png" alt="6">
-                    <div>
-                        <p>Kristina Dam Oak Table <br> With White Marble</p>
-                        <p class="categories">Marketing</p>
+
+                    <div class="carousel-cell">
+                        <img src="images/post 2.png" alt="6">
+                        <div>
+                            <p>Kristina Dam Oak Table <br> With White Marble</p>
+                            <p class="categories">Marketing</p>
+                        </div>
                     </div>
-                </a>
+
+                    <div class="carousel-cell">
+                        <img src="images/post 3.png" alt="7">
+                        <div>
+                            <p>Kristina Dam Oak Table <br> With White Marble</p>
+                            <p class="categories">Awesome</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-cell">
+                        <img src="images/post 4.png" alt="8">
+                        <div>
+                            <p>Hezy Theme</p>
+                            <p class="categories">Marketing</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
         <!--SERVICES SECTION-->
         <div class="services">
             <div class="focus">
@@ -324,6 +353,7 @@
                 </div>
             </div>
         </div>
+        <!--FOOTER SECTION-->
         <div class="footer">
             <div class="details">
                 <p>© Copyright 2022. 
@@ -340,32 +370,32 @@
                 <div class="footer-categories">
                     <h6 class="footer-list-title"><b>CATEGORIES</b></h6>
                     <div class="footer-categories-list"> 
-                        <a href="#error">Alcohol</a>
-                        <a href="#error">Art</a>
-                        <a href="#error">Books</a>
-                        <a href="#error">Drink</a>
-                        <a href="#error">Electronics</a>
-                        <a href="#error">Home</a>
-                        <a href="#error">Jewelry</a>
-                        <a href="#error">Kids & Baby</a>
-                        <a href="#error">Men's Fashion</a>
-                        <a href="#error">Mobile</a>
-                        <a href="#error">Motorcycles</a>
-                        <a href="#error">Movies</a>
-                        <a href="#error">Music</a>
-                        <a href="#error">Sport</a>
-                        <a href="#error">Toys</a>
-                        <a href="#error">Travel</a>
-                        <a href="#error">Women's Fashion</a>
+                        <a href="./Error.html">Alcohol</a>
+                        <a href="./Error.html">Art</a>
+                        <a href="./Error.html">Books</a>
+                        <a href="./Error.html">Drink</a>
+                        <a href="./Error.html">Electronics</a>
+                        <a href="./Error.html">Home</a>
+                        <a href="./Error.html">Jewelry</a>
+                        <a href="./Error.html">Kids & Baby</a>
+                        <a href="./Error.html">Men's Fashion</a>
+                        <a href="./Error.html">Mobile</a>
+                        <a href="./Error.html">Motorcycles</a>
+                        <a href="./Error.html">Movies</a>
+                        <a href="./Error.html">Music</a>
+                        <a href="./Error.html">Sport</a>
+                        <a href="./Error.html">Toys</a>
+                        <a href="./Error.html">Travel</a>
+                        <a href="./Error.html">Women's Fashion</a>
                     </div>
                 </div>
                 <div class="footer-about">
-                    <h6 href="#error" class="footer-list-title"><b>ABOUT</b></h6>
+                    <h6 href="./Error.html" class="footer-list-title"><b>ABOUT</b></h6>
                     <div class="footer-about-list">
-                        <a href="#error">About us</a>
-                        <a href="#error">Delivery</a>
-                        <a href="#error">Testimonials</a>
-                        <a href="#error">Contact</a>
+                        <a href="./Error.html">About us</a>
+                        <a href="./Error.html">Delivery</a>
+                        <a href="./Error.html">Testimonials</a>
+                        <a href="./Error.html">Contact</a>
                     </div>
                 </div>
             </div>
@@ -377,6 +407,7 @@
             </div>
         </div>
     </div>
-    <script src="app.js"></script>
+    
+    <script src="JS/Home.js"></script>
 </body>
 </html>

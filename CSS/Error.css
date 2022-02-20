@@ -1,0 +1,135 @@
+.error {
+    background-color: #F2EDEA;
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+.error-subtitle {
+    padding-top: 55px;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.error-subtitle a {
+    text-decoration: none;
+    color: #45413E;
+    padding: 0 10px;
+    letter-spacing: -1px;
+}
+
+.error-subtitle a:hover {
+    color:#84BC22;
+}
+
+.error-subtitle span {
+    padding: 0 10px;
+}
+
+.error-title {
+    text-align: center;
+    color: #45413E;
+    font-weight: bold;
+    font-size: 45px;
+    padding: 5px 0 40px 0;
+}
+
+.error-title::before {
+    margin-right: 30px;
+}
+
+.error-title::after {
+    margin-left: 30px;
+}
+
+.error-title::before , .error-title::after {
+    content: "";
+    display: inline-block;
+    background-color: #9ca4ab;
+    opacity: 0.2;
+    height: 2px;
+    width: 515px;
+    margin-bottom: 7.5px;
+}
+
+.error-page {
+    width: 1170px;
+    height: 492px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    display: flex;
+    margin-left: 55px;
+    overflow: hidden;
+}
+
+.error-image {
+    width: 680px;
+    height: 492px;
+    position: relative;
+}
+
+.error-image img {
+    position: absolute;
+    left: -55px;
+    top: 65px;
+}
+
+.error-image h1 {
+    position: absolute;
+    font-size: 115px;
+    font-weight: 700;
+    color: #84BC22;
+    left: 95px;
+    top: 160px;
+    letter-spacing: -2px;;
+}
+
+.error-content {
+    text-align: left;
+    padding: 10px 95px 0 50px;
+}
+
+.error-content h5 {
+    font-size: 25px;
+    font-weight: 700;
+    padding: 55px 0 10px;
+    letter-spacing: -1px;
+}
+
+.error-content p {
+    font-size: 15px;
+    font-weight: 600;
+    color:#45413E;
+    opacity: 0.8;
+    padding-bottom: 25px;
+}
+
+.error-content a {
+    text-decoration: none;
+    color: #45413E;
+    letter-spacing: -1px;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.error-content a:hover {
+    color: #84BC22;
+}
+
+.error-content .search-bar input {
+    box-shadow: none;
+    border-radius: 30px;
+    border-right: 0;
+    border-color: #F2EDEA;
+    border-width: 3px;
+    font-size: 13px;
+    line-height: 24px;
+    padding-left: 20px;
+}
+
+.error-content .search-bar span {
+    border-radius: 30px;
+    background-color: #ffffff;
+    border-color: #F2EDEA;
+    border-width: 3px;
+    border-left: 0;
+}

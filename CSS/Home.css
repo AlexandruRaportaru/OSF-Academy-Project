@@ -7,20 +7,26 @@ body {
 
 .custom-container {
     width: 1280px !important;
-    padding: 0 !important;
+    padding: 80px 0 0 0 !important;
+
 }
 
-/* NAVBAR */
+/* -------------------------------------------------------- NAVBAR --------------------------------------------------------- */
 
-
-.navbar {
+.navbar-wrapper {
     position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.navbar {
     font-size: 14px;
-    background-color: transparent;
+    background-color: #ffffff;
     color: #55514e !important;
     padding: 0 !important;
-    border-bottom: 3px solid #f4f4f4;
+    border-bottom: 3px solid #F2EDEA;
     height: 80px !important;
+    max-width: 1280px;
+    margin: auto;
 }
 
 .navbar-list {
@@ -34,7 +40,7 @@ body {
     padding: 0px 40px 15px 55px;
 }
 
-.dropdown-toggle {
+.navbar .dropdown-toggle {
     background: transparent !important;
     border: 0 !important;
     color: #55514e !important;
@@ -42,14 +48,14 @@ body {
     font-size: 14px !important;
 }
 
-.dropdown-toggle:hover {
+.navbar .dropdown-toggle:hover {
     background-color: #262a32 !important;
     color: #9ca4ab !important;
     transition: 0s !important;
     border-bottom: 3px solid #6cb043 !important;
 }
 
-.dropdown:hover .dropdown-menu {
+.navbar .dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0;
     background-color: #262a32 !important;
@@ -60,55 +66,56 @@ body {
     left: -391px;
 }
 
-.dropdown-container {
+.navbar .dropdown-container {
     width: 100%;
     display: flex;
 }
 
-.dropdown-first {
+.navbar .dropdown-first {
     margin: 40px 0px 40px 50px;
     flex-direction: column;
     width: 60%;
     flex-wrap: wrap;
 }
 
-.dropdown-second {
+.navbar .dropdown-second {
     margin: 40px 0px;
     flex-direction: column;
     width: 18%;
     flex-wrap: wrap;
 }
 
-.dropdown-image {
+.navbar .dropdown-image {
     margin: 40px 50px 40px 0px;
     width: 22%;
 }
 
-.dropdown-title {
+.navbar .dropdown-title {
     padding: 0 0 10px 10px;
     display: flex;
     text-decoration: none;
     color: #f4f4f4;
 }
 
-.dropdown-list , .dropdown-shortlist {
+.navbar .dropdown-list , .navbar .dropdown-shortlist {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     height: 240px;
 }
 
-.dropdown-list a {
+.navbar .dropdown-list a {
     text-decoration: none;
     color: #f4f4f4;
     padding: 3px 10px;
 }
 
-.dropdown-container a:hover {
-    color: #f4f4f4;
+.navbar .dropdown-container a:hover {
+    color: #84BC22;
+    text-decoration: underline;
 }
 
-.dropdown-shortlist a {
+.navbar .dropdown-shortlist a {
     text-decoration: none;
     color: #f4f4f4;
     padding: 3px 10px;
@@ -170,7 +177,7 @@ li {
     padding: 0 15px 10px 15px;
 }
 
-/* INTRO SECTION */
+/* ---------------------------------------------------- INTRO SECTION ----------------------------------------------------- */
 
 .intro-section {
     width: 1280px;
@@ -300,7 +307,7 @@ li {
     padding-left: 10px !important;
 }
 
-/* PRODUCTS */
+/* ---------------------------------------------------- PRODUCTS SECTION ----------------------------------------------------- */
 
 .popular-items {
     background-color: #262a32;
@@ -332,7 +339,7 @@ li {
     margin-bottom: 7.5px;
 }
 
-.products {
+.popular-items .products {
     display: flex;
     flex-wrap: wrap;
     grid-gap: 28px;
@@ -342,64 +349,64 @@ li {
     overflow: hidden;
 }
 
-.products-image {
+.popular-items .products-image {
     position: relative;
     display: flex;
     justify-content: center;
 }
 
-.products-image div {
+.popular-items .products-image div {
     position: absolute;
     bottom: 0;
     font-size: 14px;
     text-align: center;
 }
 
-.special-product {
+.popular-items .special-product {
     display: flex;
     justify-content: center;
 }
 
-.products-image div p {
+.popular-items .products-image div p {
     margin-bottom: 16px;
     font-weight: 550;
     color: #2C3E50;
 }
 
-.products-image .special {
+.popular-items .products-image .special {
     padding-bottom: 37px;
 }
 
-.products-image .btn-group {
+.popular-items .products-image .btn-group {
     padding-bottom: 10px;
     display: flex;
 }
 
-.products-image .left {
+.popular-items .products-image .left {
     width: 90px;
     color: #32C777 !important;
 }
 
-.products-image .right {
+.popular-items .products-image .right {
     width: 110px;
     color: black;
 }
 
-.products-image .right:hover {
+.popular-items .products-image .right:hover {
     background-color: #6cb043;
     border-color: #6cb043;
     color: #f4f4f4;
 }
 
-.products-image .left , .products-image .right {
+.popular-items .products-image .left, .products-image .right {
     border-radius: 30px;
     border-color: #e6e6e6;
     font-weight: 600;
     border-width: 2px;
 }
 
-.products-image .price {
-    font-family: 'Lato', sans-serif;
+.popular-items .products-image:nth-child(9), .products-image:nth-child(10), .products-image:nth-child(11), .products-image:nth-child(12) {
+    display: none;
 }
 
 #message {
@@ -434,7 +441,7 @@ li {
     padding: 0 80px;
 }
 
-/* BANNER */
+/* ---------------------------------------------------- BANNER SECTION ----------------------------------------------------- */
 
 .banner {
     display: flex;
@@ -458,7 +465,7 @@ li {
     padding-top: 20px;
 }
 
-/* FEATURED PRODUCTS */
+/* ---------------------------------------------------- FEATURED PRODUCTS ----------------------------------------------------- */
 
 .featured-products {
     background-color: #262a32;
@@ -479,42 +486,8 @@ li {
     letter-spacing: -1px;
 }
 
-.slider {
-    width: auto;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    padding-top: 20px;
-}
 
-.slider-cell {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    padding: 0 15px;
-}
-
-.slider-cell div {
-    position: absolute;
-    bottom: 0;
-    font-size: 14px;
-    text-align: center;
-}
-
-
-.slider-cell div p {
-    margin-bottom: 16px;
-    font-weight: 550;
-    color:#55514e;
-}
-
-.slider-cell .categories {
-    color: #84BC22;
-    font-weight: bold;
-}
-
-
-/* SERVICES */
+/* ---------------------------------------------------- SERVICES SECTION ----------------------------------------------------- */
 
 .services {
     background-color: #45413E;
@@ -543,7 +516,7 @@ li {
     font-size: 13px;
 }
 
-/* FOOTER */
+/* ----------------------------------------------------- FOOTER SECTION ------------------------------------------------------ */
 
 .footer {
     margin: 40px 55px 40px 55px;
@@ -615,9 +588,119 @@ li {
     padding-left: 20px;
 }
 
-/* SHARED */
+
+/* ---------------------------------------------------- SHARED SECTION ----------------------------------------------------- */
 
 .btn:focus {
     box-shadow: none !important;
 }
+
+.price {
+    font-family: 'Lato', sans-serif;
+}
+
+/* external css: flickity.css */
+
+.flickity-viewport {
+	overflow: visible;
+}
+
+.timeline {
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.backslash {
+    font-weight: 700;
+    font-size: 22px;
+    position: absolute;
+    color: #ffffff;
+    letter-spacing: -1px;
+    left: 342px;
+}
+
+.backslash::before {
+    margin-right: 10px;
+}
+
+.backslash::after {
+    margin-left: 10px;
+}
+
+.backslash::before , .backslash::after {
+    content: "";
+    display: inline-block;
+    background-color: white;
+    height: 2px;
+    width: 235px;
+    margin-bottom: 5px;
+}
+
+.timeline .carousel {
+	overflow: hidden;
+	width: 100%;
+    padding-top: 55px;
+    height: 350px !important;
+}
+
+.carousel-cell {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.carousel-cell div {
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.carousel-cell div p {
+    margin-bottom: 16px;
+    font-weight: 550;
+    color:#55514e;
+}
+
+.carousel-cell .categories {
+    color: #84BC22;
+    font-weight: bold;
+}
+
+.flickity-button:hover {
+	cursor: pointer;
+}
+
+.flickity-prev-next-button {
+	width: 30px;
+	height: 30px;
+	background: #2D343A;
+	transform: translateY(-350px);
+    border: 0;
+    margin-bottom: 15px;
+}
+
+.flickity-prev-next-button.previous {
+    margin-right: 265px;
+}
+
+.flickity-prev-next-button.next {
+    margin-left: 265px;
+}
+
+.flickity-prev-next-button .flickity-button-icon {
+	position: absolute;
+	width: 40%;
+	height: 40%;
+	fill: white;
+	margin: 3px;
+    top: 20%;
+    right: 25%;
+}
+
+
+
 
