@@ -588,6 +588,149 @@ li {
     padding-left: 20px;
 }
 
+/* ------------------------------------------------ COOKIE SECTION ------------------------------------------------------- */
+
+
+.cookie-disclaimer {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 15;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    height: 446%;
+}
+
+.cookie-disclaimer .cookie-box {
+    background: #ffffff;
+    color: #45413E;
+    width: 1170px;
+    bottom: 200px;
+    left: 172px;
+    z-index: 20;
+    height: 150px;
+    position: fixed;
+    border-radius: 5px;
+}
+
+.cookie-disclaimer .cookie-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+}
+  
+.cookie-disclaimer .cookie-close {
+    float: right;
+    padding: 0 12px 0 0;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.cookie-disclaimer .cookie-text {
+    padding: 5px 0 0 25px;
+}
+
+.cookie-text h6 {
+    color:#84BC22;
+    font-size: 17px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.cookie-text p {
+    font-size: 14px;
+}
+
+.cookie-text a {
+    text-decoration: none;
+    color: #84BC22;
+}
+
+.cookie-disclaimer .btn-success {
+    height: 36px;
+    width: 144px;
+    margin: 70px 0 0 110px;
+    background-color: #84BC22 !important;
+    border-radius: 30px;
+    border-color: #84BC22;
+}
+
+.cookie-disclaimer .btn-success:hover {
+    border-color: #84BC22;
+}
+
+
+/* ---------------------------------------------------- LOG IN SECTION ----------------------------------------------------- */
+
+
+.modal-content {
+    padding: 30px;
+    width: 500px;
+    height: 468px;
+}
+
+.modal-body h4 {
+    padding: 0 0 40px 0;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    color:#45413E;
+}
+
+.modal-body .form-control {
+    border-radius: 30px;
+}
+
+.form-group span {
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    color: #45413E !important;
+    padding: 20px 0 5px 0;
+}
+
+.form-group input:focus {
+    box-shadow: none;
+}
+
+form i {
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.pass {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form .btn {
+    margin: 56px 0 20px 110px;
+    background-color: #84BC22;
+    border-color: #84BC22;
+    color: #ffffff;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+form .btn span {
+    padding: 0 60px;
+}
+
+form .btn:hover {
+    background-color: #ffffff;
+    color: #84BC22;
+    border-color: #84BC22;
+}
+
+.green-modal {
+    color: #84BC22 !important;
+    font-size: 14px;
+}
+
+form input {
+    border: 2px solid #dbd7d4 !important;
+}
 
 /* ---------------------------------------------------- SHARED SECTION ----------------------------------------------------- */
 
@@ -698,7 +841,7 @@ li {
 	fill: white;
 	margin: 3px;
     top: 20%;
-    right: 25%;
+    right: 20%;
 }
 
 

@@ -15,6 +15,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
     <link href="https://npmcdn.com/flickity@2/dist/flickity.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="navbar-wrapper">
@@ -95,7 +100,7 @@
                     </div>
                 </li>
                 <li class="navbar-icon"><button class="button-icon" disabled><i class="fa-solid fa-magnifying-glass"></i></button></li>
-                <li class="navbar-icon"><button class="button-icon"><i class="fa-regular fa-user"></i></button></li>
+                <li class="navbar-icon"><button class="button-icon" type="button" data-toggle="modal" data-target="#loginModal"><i class="fa-regular fa-user"></i></button></li>
                 <li class="navbar-icon"><button class="button-icon" disabled><i class="fa-regular fa-heart"></i></button></li>
                 <li class="navbar-icon"><button class="button-icon"><i class="fa-solid fa-bag-shopping"></i></button></li>
             </ul>
@@ -151,6 +156,7 @@
                 </div>
             </div>
         </div>
+
         <!--POPULAR ITEMS SECTION-->
         <div class="popular-items">
             <h3 class="popular-items-title">Popular Items</h3>
@@ -404,6 +410,55 @@
                 <a href="https://myaccount.google.com/intro/profile"><i class="fa-brands fa-google-plus-g"></i></a>
                 <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
                 <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+        </div>
+
+        <div class="cookie-disclaimer">
+            <div class="cookie-box">
+                <div class="cookie-close accept-cookie">
+                    <i class="fa fa-times"></i>
+                </div>
+                <div class="cookie-container">
+                    <div class="cookie-text">
+                        <h6>This website uses cookies</h6>
+                        <p>OSF uses its own and third-party cookies for statistical purposes, to know your preferences, 
+                            for website performance <br> and interaction with social media offering publicity tailored to your interests. 
+                            If you continue browsing, we consider that you accept it's use. <br> You can expand this 
+                            information cosulting our <a href="#">Cookies Policy Page.</a>
+                        </p>
+                    </div>
+                    <button type="button" class="btn btn-success accept-cookie">ACCEPT</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h4>Sign in</h4>
+                        <div class="d-flex flex-column">
+                            <form>
+                                <div class="form-group">
+                                    <div class="form-predefined">
+                                        <span>Email</span>
+                                    </div>
+                                    <input type="text" name="email" id="email" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-predefined pass">
+                                        <span>Password</span>
+                                        <span style="color: #84BC22 !important">forgot password?</span>
+                                    </div>
+                                    <input type="password" name="password" id="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{6,}$" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" required class="form-control">
+                                    <i class="bi bi-eye-slash" id="togglePassword"></i>
+                                </div>
+                                <button type="submit" id="submit" class="btn btn-outline-secondary submit"><span>LOGIN</span></button>
+                            </form>
+                            <span class="text-center green-modal">I don't have an account</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
