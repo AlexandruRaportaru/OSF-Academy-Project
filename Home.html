@@ -85,18 +85,22 @@
                 <li class="disabled-menus">COMPANY</li>
                 <li class="disabled-menus">LIBRARY</li>
                 <li class="disabled-menus">CONTACT US</li>
-                <li>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle languages" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" disabled>
-                            <span>EN</span>    
-                        </button>
+                <li class="languages">
+                    <div class="languages-currency">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>EN</option>
+                            <option value="1">US</option>
+                            <option value="2">RO</option>
+                        </select>
                     </div>
                 </li>
-                <li>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle currency" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" disabled>
-                            <span>$ US</span>    
-                        </button>
+                <li class="currency">
+                    <div class="languages-currency">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>$ US</option>
+                            <option value="1">EUR</option>
+                            <option value="2">RON</option>
+                        </select>
                     </div>
                 </li>
                 <li class="navbar-icon"><button class="button-icon" disabled><i class="fa-solid fa-magnifying-glass"></i></button></li>
@@ -106,8 +110,9 @@
             </ul>
         </nav>
     </div>
-    <!--INTRO-SECTION-->
+    
     <div class="container custom-container">
+        <!--INTRO-SECTION-->
         <div class="intro-section">
             <div class="carousel-wrapper">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -169,7 +174,7 @@
                     </div>
                 </div>
                 <div class="products-image">
-                    <a href=""><img src="images/2.png"></a>
+                    <a href="Product.html"><img src="images/2.png"></a>
                     <div class="special-product">
                         <p class="special">Hay - About A Lounge <br> Chair AAL 93</p>
                         <div class="btn-group" role="group" aria-label="Basic outlined example">
@@ -362,14 +367,16 @@
         <!--FOOTER SECTION-->
         <div class="footer">
             <div class="details">
-                <p>© Copyright 2022. 
+                <p>
+                    &copy; Copyright
+                    <span id="currentYear">x</span>. 
                     <br> All Rights Reserved.
                     <br><br> <b>CONTACT</b> 
                     <br> Headquarters: 
                     <br> 5600, Blvd. des Galeries, Bur 530
                     <br> Quebec, Quebec G2K 2H6
-                    <br><br> contact@osf-global.com
-                    <br><br> +1 (888) 548-4344
+                    <br><br> <a href ="mailto: contact@osf-global.com">contact@osf-global.com</a>
+                    <br><br> <a href="tel:18885484344">+1 (888) 548-4344</a> 
                 </p>
             </div>
             <div class="footer-products">

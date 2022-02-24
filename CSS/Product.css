@@ -1,0 +1,421 @@
+.cardigan {
+    background-color: #F2EDEA;
+    text-align: center;
+}
+
+.cardigan-subtitle {
+    padding-top: 55px;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.cardigan-subtitle a {
+    text-decoration: none;
+    color: #45413E;
+    padding: 0 10px;
+    letter-spacing: -1px;
+    font-size: 14px;
+}
+
+.cardigan-subtitle a:hover {
+    color:#84BC22;
+}
+
+.cardigan-subtitle span {
+    padding: 0 10px;
+}
+
+.cardigan-title {
+    text-align: center;
+    color: #45413E;
+    font-weight: bold;
+    font-size: 50px;
+    padding: 5px 0 40px 0;
+    letter-spacing: -2.5px;
+}
+
+.cardigan-title::before {
+    margin-right: 82px;
+}
+
+.cardigan-title::after {
+    margin-left: 82px;
+}
+
+.cardigan-title::before , .cardigan-title::after {
+    content: "";
+    display: inline-block;
+    background-color: #9ca4ab;
+    opacity: 0.2;
+    height: 2px;
+    width: 190px;
+    margin-bottom: 7.5px;
+}
+
+.cardigan-page {
+    width: 1170px;
+    height: 958px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin-left: 55px;
+}
+
+.cardigan-product {
+    display: flex;
+}
+
+.cardigan-wrapper {
+    display: flex;
+    width: 770px;
+    padding: 15px;
+}
+
+.cardigan-big {
+    height: 526px;
+    width: 580px;
+    position: relative;
+}
+
+.cardigan-big .image {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background-size: cover;
+    height: 100%;
+    display: none;
+}
+
+.cardigan-big .active {
+    display: block;
+}
+
+.cardigan-small {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+.cardigan-small img {
+    opacity: 0.6;
+    margin: 15px 0 15px 15px;
+    border: 2px solid #686c6e;
+    width: 74px;
+    height: 74px;
+}
+
+.cardigan-small .active {
+    opacity: 1;
+    border-color: #84BC22;
+    border-width: 2px;
+}
+
+.cardigan-details {
+    text-align: left;
+    padding: 30px;
+}
+
+.cardigan-details h1 {
+    font-size: 43px;
+    color: #45413E;
+    font-weight: 900;
+    padding-bottom: 15px;
+}
+
+.cardigan-details .dropdown-toggle {
+    border-radius: 30px !important;
+    border: 2px solid #E8E2D6;
+    width: 154px !important;
+    margin-bottom: 20px;
+}
+
+.cardigan-details .dropdown-menu {
+    min-width: 160px !important;
+    width: 160px !important;
+}
+
+.cardigan-details .dropdown-item.active {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+.cardigan-details .dropdown-item:hover {
+    background-color: #E8E2D6 !important;
+}
+
+.filter-option i {
+    padding-right: 15px !important;
+}
+
+.cardigan-details .dropdown-toggle:hover {
+    border: 2px solid #E8E2D6 !important;
+}
+
+.cardigan-details .dropdown-menu .show{
+    overflow-y: initial !important;
+}
+
+.cardigan-details .dropdown-menu span{
+    display:flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+.cardigan-details .selectpicker:focus{
+    box-shadow: none !important;
+    border: 2px solid #E8E2D6 !important;
+}
+
+.cardigan-details .gray i::before {
+    color: #585C5C !important;
+}
+
+.cardigan-details .green i::before {
+    color: #82AE1A !important;
+}
+
+.cardigan-details .red i::before {
+    color: #EA1A17 !important;
+}
+
+.cardigan-details .blue i::before {
+    color: #3B5A9A !important;
+}
+
+.dropdown-menu li:hover {
+    background-color: #E8E2D6 !important;
+}
+
+.cardigan-buttons {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.cardigan-buttons .input-group {
+    width: 108px;
+}
+
+.input-number {
+    border: 2px solid #E8E2D6 !important;
+    border-left: none !important;
+    border-right: none !important;
+    height: 38px;
+    padding: 0 !important;
+    padding-left: 11px !important;
+}
+
+.input-number:focus {
+    box-shadow: none !important;
+}
+
+.input-group-btn .btn {
+    border: 2px solid #E8E2D6;
+    color: #585c5c;
+    height: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.input-group-btn #up {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 11px !important;
+    padding-right: 15px !important;
+}
+
+.input-group-btn #up:hover {
+    color: #84BC22;
+}
+
+.input-group-btn #down {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+    font-size: 26px;
+    font-weight: 600;
+    padding-bottom: 13px !important;
+    padding-left: 15px !important;
+}
+
+.input-group-btn #down:hover {
+    color: #84BC22;
+}
+
+.cardigan-buttons .addtocart {
+    border-width: 2px !important;
+    border-color: #E8E2D6 !important;
+    border-radius: 30px;
+    background-color: #84BC22;
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+.cardigan-buttons .addtocart:hover {
+    background-color: #ffffff !important;
+    color: #84BC22;
+}
+
+.cardigan-buttons .addtocart span {
+    padding: 0 15px;
+    opacity: 0.9;
+}
+
+.cardigan-paragraph button {
+    border: none;
+    background-color: #ffffff;
+    color: #84BC22;
+    padding: 0;
+}
+
+.cardigan-paragraph {
+    padding-bottom: 15px;
+}
+
+.cardigan-paragraph {
+    color: #45413E;
+    font-weight: 600;
+    opacity: 0.8;
+    letter-spacing: -0.5px;
+}
+
+.cardigan-paragraph #more {
+    display: none;
+}
+
+.cardigan-social {
+    display: flex;
+    color: #686c6e;
+}
+
+.cardigan-social span {
+    padding-right: 20px;
+    font-weight: 600;
+    opacity: 0.5;
+}
+
+.cardigan-tabs {
+    width: 100%;
+}
+
+.nav-tabs {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+.nav-item {
+    height: 70px;
+}
+
+.nav-item .nav-link {
+    color: #9ca4ab;
+    border: none !important;
+    font-size: 24px;
+    font-weight: bold;
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+    padding: 18px 44px 18px 50px !important;
+}
+
+.nav-item .nav-link:hover {
+    color: #9ca4ab;
+}
+
+.nav-item .active {
+    background-color: #262a32 !important;
+    border: none !important;
+    color: #ffffff !important;
+}
+
+.tab-content {
+    background-color: #262a32;
+    color: #ffffff;
+    height: 270px;
+    width: 100%;
+    padding: 60px 50px 0 50px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.tab-content .active {
+    width: 100%;
+    display: flex !important;
+}
+
+
+.tab-content p {
+    width: 50%;
+    text-align: left;
+    padding: 10px 30px 0 15px;
+}
+
+.cardigan-popular-items {
+    background-color: #F2EDEA;
+    padding: 50px 55px 0 55px;
+}
+
+.cardigan-popular-items-title {
+    text-align: center;
+    color: #45413E;
+    font-weight: bold;
+    font-size: 27px;
+    padding-bottom: 15px;
+}
+
+.cardigan-popular-items-title::before {
+    margin-right: 30px;
+}
+
+.cardigan-popular-items-title::after {
+    margin-left: 30px;
+}
+
+.cardigan-popular-items-title::before , .cardigan-popular-items-title::after {
+    content: "";
+    display: inline-block;
+    background-color: #dfdfdf;
+    height: 2px;
+    width: 449px;
+    margin-bottom: 7.5px;
+}
+
+.cardigan-popular-items .cardigan-products {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 28px;
+    justify-items: center;
+    padding-bottom: 50px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.cardigan-popular-items .cardigan-products-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.cardigan-popular-items .cardigan-products-image div {
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.cardigan-popular-items .cardigan-products-image div p {
+    margin-bottom: 16px;
+    font-weight: 550;
+    color: #2C3E50;
+}
+
+.cardigan-products-image .price {
+    color: #9ca4ab;
+    opacity: 0.4;
+}
+

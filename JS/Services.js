@@ -1,3 +1,9 @@
+// FOOTER CURRENT YEAR //
+
+let currentYear = new Date().getFullYear();
+document.getElementById("currentYear").innerHTML = currentYear;
+
+
 // COLOR SELECTOR //
 
 const colors = document.querySelectorAll('.color');
@@ -25,9 +31,10 @@ const loadmore = document.querySelector('.loadMore');
             }
         }
         currentItems += 4;
-        debugger
         // Load more button will be hidden after list fully loaded
         if (currentItems >= elementList.length) {
             event.currentTarget.style.display = 'none';
         }
     })
+
+

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSF Academy Project</title>
+    <link rel="stylesheet" href="CSS/Home.css">
+    <link rel="stylesheet" href="CSS/Product.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b08c9dc928.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+    <link href="https://npmcdn.com/flickity@2/dist/flickity.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.18/dist/css/bootstrap-select.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.18/dist/js/bootstrap-select.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.18/dist/js/i18n/defaults-*.min.js"></script>
+</head>
+<body>
+    <div class="navbar-wrapper">
+        <nav class="navbar navbar-light">
+            <a href="./Home.html" id="logo"><img src="images\logo.png"></a>
+            <ul class="navbar-list">
+                <li>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle services-button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="services-text">SERVICES</span>    
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <div class="dropdown-container">
+                                <div class="dropdown-first">
+                                    <h6 class="dropdown-title"><b>PRODUCT CATEGORIES</b></h6>
+                                    <div class="dropdown-list"> 
+                                        <a href="./Error.html">Accesories</a>
+                                        <a href="./Error.html">Alcohol</a>
+                                        <a href="./Error.html">Art</a>
+                                        <a href="./Error.html">Books</a>
+                                        <a href="./Error.html">Drink</a>
+                                        <a href="./Error.html">Electronics</a>
+                                        <a href="./Error.html">Flowers & Plants</a>
+                                        <a href="./Error.html">Food</a>
+                                        <a href="./Error.html">Gadgets</a>
+                                        <a href="./Error.html">Garden</a>
+                                        <a href="./Error.html">Grocery</a>
+                                        <a href="./Error.html">Home</a>
+                                        <a href="./Error.html">Jewelry</a>
+                                        <a href="./Error.html">Kids & Baby</a>
+                                        <a href="./Error.html">Men's Fashion</a>
+                                        <a href="./Error.html">Mobile</a>
+                                        <a href="./Error.html">Motorcycles</a>
+                                        <a href="./Error.html">Movies</a>
+                                        <a href="./Error.html">Music</a>
+                                        <a href="./Error.html">Office</a>
+                                        <a href="./Error.html">Pets</a>
+                                        <a href="./Error.html">Romantic</a>
+                                        <a href="./Error.html">Sport</a>
+                                        <a href="./Error.html">Toys</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown-second">
+                                    <h6 class="dropdown-title"><b>SALE</b></h6>
+                                    <div class="dropdown-shortlist">
+                                        <a href="./Error.html">Accesories</a>
+                                        <a href="./Error.html">Alcohol</a>
+                                        <a href="./Error.html">Art</a>
+                                        <a href="./Error.html">Books</a>
+                                        <a href="./Error.html">Drink</a>
+                                        <a href="./Error.html">Electronics</a>
+                                        <a href="./Error.html">Flowers & Plants</a>
+                                        <a href="./Error.html">Food</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown-image">
+                                    <img src="images\dropdown-image.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="disabled-menus">COMPANY</li>
+                <li class="disabled-menus">LIBRARY</li>
+                <li class="disabled-menus">CONTACT US</li>
+                <li class="languages">
+                    <div class="languages-currency">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>EN</option>
+                            <option value="1">US</option>
+                            <option value="2">RO</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="currency">
+                    <div class="languages-currency">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>$ US</option>
+                            <option value="1">EUR</option>
+                            <option value="2">RON</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="navbar-icon"><button class="button-icon" disabled><i class="fa-solid fa-magnifying-glass"></i></button></li>
+                <li class="navbar-icon"><button class="button-icon" type="button" data-toggle="modal" data-target="#loginModal"><i class="fa-regular fa-user"></i></button></li>
+                <li class="navbar-icon"><button class="button-icon" disabled><i class="fa-regular fa-heart"></i></button></li>
+                <li class="navbar-icon"><button class="button-icon"><i class="fa-solid fa-bag-shopping"></i></button></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="container custom-container">
+        <!--CARDIGAN-SECTION-->
+        <div class="cardigan">
+            <h6 class="cardigan-subtitle">
+                <a href="./Home.html">Home</a> / 
+                <a href="#">OSF Theme</a> / 
+                <span>Ruffle Front V-Neck Cardigan</span>
+            </h6>
+            <h1 class="cardigan-title">Ruffle Front V-Neck Cardigan</h1>
+            <div class="cardigan-page">
+                <div class="cardigan-product">
+                    <div class="cardigan-wrapper">
+                        <div class="cardigan-big">
+                            <div style='background-image: url("images/p-1.jpg");' class="image p-1 active"></div>
+                            <div style="background-image: url('images/p-2.jpg');" class="image p-2"></div>
+                            <div style="background-image: url('images/p-3.jpg');" class="image p-3"></div>
+                            <div style="background-image: url('images/p-4.jpg');" class="image p-4"></div>
+                        </div>
+                        <div class="cardigan-small">
+                            <img src="images/p-a.jpg" image="p-1" class="active">
+                            <img src="images/p-b.jpg" image="p-2">
+                            <img src="images/p-c.jpg" image="p-3">
+                            <img src="images/p-d.jpg" image="p-4">
+                        </div>
+                    </div>
+                    
+                    <div class="cardigan-details">
+                        <h1 class="price">$299.99</h1>
+                        <select class="selectpicker">
+                            <option class="gray" data-content="<i class='fa-solid fa-circle' aria-hidden='true'></i>Dark Gray"></option>
+                            <option class="green" data-content="<i class='fa-solid fa-circle' aria-hidden='true'></i>Green"></option>
+                            <option class="red" data-content="<i class='fa-solid fa-circle' aria-hidden='true'></i>Red"></option>
+                            <option class="blue" data-content="<i class='fa-solid fa-circle' aria-hidden='true'></i>Dark Blue"></option>
+                        </select>
+                        <div class="cardigan-buttons">
+                            <div class="input-group">
+                                <div class="input-group-btn">
+                                    <button id="down" class="btn btn-default" onclick=" down('0')">-</button>
+                                </div>
+                                <input type="text" id="myNumber" class="form-control input-number" onkeypress="return onlyNumberKey(event)" value="1" />
+                                <div class="input-group-btn">
+                                    <button id="up" class="btn btn-default" onclick="up('99')">+</button>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-outline-secondary addtocart"><span>ADD TO CART</span></button>
+                        </div>
+
+                        <div class="cardigan-paragraph">
+                            <p>
+                                Phasellus sagittis eros sed dolor sagittis maximus. 
+                                Curabitur porta luctus lacus non fringilla. 
+                                Nam mattis sem quam, vitae fringilla nisl tincidunt eu. 
+                                Etiam aliquet nisi dolor, sit amet dignissim libero sodales eget. Aliquam.
+                                <span id="dots"></span><span id="more">
+                                <br><br>
+                                Phasellus eget maximus nisi. Quisque rutrum nisi vitae euismod posuere. 
+                                Phasellus ante arcu, hendrerit vel aliquam at, rhoncus nec diam. 
+                                Curabitur aliquet ac mi in porta. Suspendisse nec iaculis ante, at ultricies. 
+                                </span>
+                            </p>
+                            <button onclick="myFunction()" id="myBtn">Read more</button>
+                        </div>
+
+                        <div class="cardigan-social">
+                            <span>Share</span>
+                            <div class="social-media">
+                                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://myaccount.google.com/intro/profile"><i class="fa-brands fa-google-plus-g"></i></a>
+                                <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest-p"></i></a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="cardigan-tabs">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="description-tab title" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">Description</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="additional-information-tab title" data-bs-toggle="tab" data-bs-target="#additional-information" type="button" role="tab" aria-controls="additional-information" aria-selected="false">Additional Information</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="reviews-tab title" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews (3)</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Morbi pulvinar diam a tristique ornare. Cras eu sem enim. Praesent.
+                                <br><br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Phasellus bibendum neque non felis lacinia, id. 
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Donec eu lacus eu nunc sollicitudin venenatis. 
+                                Nunc ullamcorper velit laoreet ipsum sagittis, eget convallis turpis tincidunt. 
+                                Vestibulum id diam sapien. Vestibulum mi sapien, elementum in tincidunt finibus, porttitor. 
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="additional-information" role="tabpanel" aria-labelledby="additional-information-tab">
+                            <p>
+                                Nunc tellus augue, tincidunt ut sapien elementum, mollis faucibus magna. 
+                                Pellentesque convallis ligula accumsan, fringilla ipsum in, tincidunt libero. 
+                                Aenean neque justo, mattis nec blandit non, ullamcorper eget quam. 
+                                Vestibulum auctor efficitur mauris ut vulputate. Vivamus at condimentum. 
+                            </p>
+                            <p>
+                                Aliquam posuere libero vitae metus dignissim hendrerit. 
+                                Curabitur faucibus, neque at consequat sagittis, neque mauris gravida orci, quis.
+                                <br><br>
+                                Sed imperdiet lectus eu nulla elementum, et dictum dui ultrices. 
+                                In congue mi et quam faucibus. 
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                            <p>
+                                1. Ut sodales fermentum nibh, non molestie orci.
+                                <br>
+                                2. Nullam sit amet commodo libero. Orci varius natoque.
+                                <br>
+                                3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardigan-popular-items">
+                <h3 class="cardigan-popular-items-title">POPULAR ITEMS</h3>
+                <div class="cardigan-products">
+                    <div class="cardigan-products-image">
+                        <img src="images/9.png">
+                        <div>
+                            <p style="color: #55514e">Kristina Dam Oak Table With White <br> Marble Top</p> 
+                            <p class="price">$ 799.55</p>
+                        </div>
+                    </div>
+                    <div class="cardigan-products-image">
+                        <img src="images/13.png">
+                        <div>
+                            <p>Kristina Dam Oak Table With White <br> Marble Top</p>
+                            <p class="price">$ 2195.00</p>
+                        </div>
+                    </div>
+                    <div class="cardigan-products-image">
+                        <img src="images/4.png">
+                        <div>
+                            <p>Activate Facial Mask and <br> Charcoal Soap</p>
+                            <p class="price">$ 129.55</p>
+                        </div>
+                    </div>
+                    <div class="cardigan-products-image">
+                        <img src="images/14.png">
+                        <div>
+                            <p>Cocktail Table Walnut <br> | YES</p>
+                            <p class="price">$ 629.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--SERVICES SECTION-->
+        <div class="services">
+            <div class="focus">
+                <img src="images/free.png">
+                <div>
+                    <h6>FOCUS</h6>
+                    <p>Our unwavering focus on superior service delivery and building next generation competencies</p>
+                </div>
+            </div>
+            <div class="method">
+                <img src="images/easy.png">
+                <div>
+                    <h6>METHOD</h6>
+                    <p>A standardized methodology designed to deliver measurable business results and predictable costs</p>
+                </div>
+            </div>
+            <div class="knowledge">
+                <img src="images/wide.png">
+                <div>
+                    <h6>KNOWLEDGE</h6>
+                    <p>A highly skilled, proactive workforce that reliably imrpoves each client's ROI while mitigating their business risk</p>
+                </div>
+            </div>
+        </div>
+        <!--FOOTER SECTION-->
+        <div class="footer">
+            <div class="details">
+                <p>
+                    &copy; Copyright
+                    <span id="currentYear">x</span>. 
+                    <br> All Rights Reserved.
+                    <br><br> <b>CONTACT</b> 
+                    <br> Headquarters: 
+                    <br> 5600, Blvd. des Galeries, Bur 530
+                    <br> Quebec, Quebec G2K 2H6
+                    <br><br> <a href ="mailto: contact@osf-global.com">contact@osf-global.com</a>
+                    <br><br> <a href="tel:18885484344">+1 (888) 548-4344</a> 
+                </p>
+            </div>
+            <div class="footer-products">
+                <div class="footer-categories">
+                    <h6 class="footer-list-title"><b>CATEGORIES</b></h6>
+                    <div class="footer-categories-list"> 
+                        <a href="./Error.html">Alcohol</a>
+                        <a href="./Error.html">Art</a>
+                        <a href="./Error.html">Books</a>
+                        <a href="./Error.html">Drink</a>
+                        <a href="./Error.html">Electronics</a>
+                        <a href="./Error.html">Home</a>
+                        <a href="./Error.html">Jewelry</a>
+                        <a href="./Error.html">Kids & Baby</a>
+                        <a href="./Error.html">Men's Fashion</a>
+                        <a href="./Error.html">Mobile</a>
+                        <a href="./Error.html">Motorcycles</a>
+                        <a href="./Error.html">Movies</a>
+                        <a href="./Error.html">Music</a>
+                        <a href="./Error.html">Sport</a>
+                        <a href="./Error.html">Toys</a>
+                        <a href="./Error.html">Travel</a>
+                        <a href="./Error.html">Women's Fashion</a>
+                    </div>
+                </div>
+                <div class="footer-about">
+                    <h6 href="./Error.html" class="footer-list-title"><b>ABOUT</b></h6>
+                    <div class="footer-about-list">
+                        <a href="./Error.html">About us</a>
+                        <a href="./Error.html">Delivery</a>
+                        <a href="./Error.html">Testimonials</a>
+                        <a href="./Error.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://myaccount.google.com/intro/profile"><i class="fa-brands fa-google-plus-g"></i></a>
+                <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+        </div>
+    </div>
+    <script src="JS/Product.js"></script>
+</body>
+</html>

@@ -15,6 +15,7 @@
     color: #45413E;
     padding: 0 10px;
     letter-spacing: -1px;
+    font-size: 14px;
 }
 
 .error-subtitle a:hover {
@@ -29,7 +30,7 @@
     text-align: center;
     color: #45413E;
     font-weight: bold;
-    font-size: 45px;
+    font-size: 50px;
     padding: 5px 0 40px 0;
 }
 
@@ -47,7 +48,7 @@
     background-color: #9ca4ab;
     opacity: 0.2;
     height: 2px;
-    width: 515px;
+    width: 510px;
     margin-bottom: 7.5px;
 }
 
