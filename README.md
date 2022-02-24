@@ -1,1 +1,1 @@
-[Work in progress] - Portfolio ---> https://AlexandruRaportaru.github.io/OSF-Academy-Project
+[Work in progress] - Portfolio ---> https://AlexandruRaportaru.github.io/OSF-Academy-Project/Home.html
