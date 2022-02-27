@@ -1,4 +1,4 @@
-const countCart = localStorage.getItem('count-cart');
+const countCart = localStorage.getItem('count-cart') || 0 ;
 $('.total-count').html(countCart);
 
 
