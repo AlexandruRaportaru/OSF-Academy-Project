@@ -1,3 +1,8 @@
+// FOOTER CURRENT YEAR //
+
+let currentYear = new Date().getFullYear();
+document.getElementById("currentYear").innerHTML = currentYear;
+
 
 // IMAGES SLIDER //
 
@@ -36,20 +41,51 @@ function onlyNumberKey(evt) {
     return true;
 }
 
+// MODAL-IMAGE //
+
+function zoom() {
+    var modal = document.getElementById('myModal');
+    var img = document.querySelector('.image.active').attributes.src.value;
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    modal.style.display = "block";
+    modalImg.src = img;
+    debugger;
+    modalImg.alt = "";
+    captionText.innerHTML = "";
+}
+
+var modal = document.getElementById('myModal');
+modal.onclick = function() {
+    img01.className += " out";
+    setTimeout(function() {
+       modal.style.display = "none";
+       img01.className = "modal-custom";
+     }, 400);
+    
+ }    
+
+
 // READ MORE BUTTON //
 
 function myFunction() {
-    const dots = document.getElementById("dots");
     const moreText = document.getElementById("more");
     const btnText = document.getElementById("myBtn");
   
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
+    if (moreText.style.display === "none") {
       btnText.innerHTML = "Read more";
       moreText.style.display = "none";
     } else {
-      dots.style.display = "none";
       btnText.style.display = "none";
       moreText.style.display = "inline";
     }
 } 
+
+
+// CART //
+
+$('.add-to-cart').click(function(event) {
+  const count = $('.input-number').val();
+  $('.total-count').html(count);
+  localStorage.setItem('count-cart', count);
+});

@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OSF Academy Project</title>
     <link rel="stylesheet" href="CSS/Home.css">
-    <link rel="stylesheet" href="CSS/Error.css">
+    <link rel="stylesheet" href="CSS/Cart.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/b08c9dc928.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://npmcdn.com/flickity@2/dist/flickity.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js"></script>
 </head>
 <body>
     <div class="navbar-wrapper">
@@ -100,36 +102,116 @@
                 <li class="navbar-icon"><button class="button-icon" disabled><i class="fa-solid fa-magnifying-glass"></i></button></li>
                 <li class="navbar-icon"><button class="button-icon"><i class="fa-regular fa-user"></i></button></li>
                 <li class="navbar-icon"><button class="button-icon" disabled><i class="fa-regular fa-heart"></i><div class="circle-heart">0</div></button></li>
-                <li class="navbar-icon"><a href="Cart.html" data-target="#cart" class="button-icon cart-icon"><i class="fa-solid fa-bag-shopping"></i><div class="circle-cart total-count">0</div></a></li>
+                <li class="navbar-icon"><a href="Cart.html" data-target="#cart" class="button-icon cart-icon"><i class="fa-solid fa-bag-shopping"></i><div class="circle-cart total-count">2</div></a></li>
             </ul>
         </nav>
     </div>
     
     <div class="container custom-container">
-        <!--ERROR-SECTION-->
-        <div class="error">
-            <h6 class="error-subtitle">
+        <!--CART SECTION-->
+        <div class="cart">
+            <h6 class="cart-subtitle">
                 <a href="./Home.html">Home</a> / 
-                <span>404</span>
+                <span>Shopping Cart</span>
             </h6>
-            <h1 class="error-title">404</h1>
-            <div class="error-page">
-                <div class="error-image">
-                    <img src="images/exclamation.png">
-                    <h1>Oops!</h1>
+            <h1 class="cart-title">SHOPPING CART</h1>
+            <div class="cart-page">
+                <div class="cart-products">
+                    <div class="cart-product">
+                        <img src="images/square.png">
+                        <div class="cart-product-description">
+                            <p>Kristina Dam Oak Table With White Marble Top</p> 
+                            <p class="product-price price">$2195</p>
+                        </div>
+                        <div class="cart-quantity">
+                            <div class="input-group">
+                                <div class="input-group-btn">
+                                    <button id="down" class="btn btn-default" onclick=" down('0','myFirstNumber')">-</button>
+                                </div>
+                                <input type="text" id="myFirstNumber" class="form-control input-number" onkeypress="return onlyNumberKey(event)" value="1" />
+                                <div class="input-group-btn">
+                                    <button id="up" class="btn btn-default" onclick="up('99','myFirstNumber')">+</button>
+                                </div>
+                            </div>
+                            <div class="product-final-price price">$2195</div>
+                        </div>
+                        <button class="delete-btn"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+
+                    <div class="cart-product">
+                        <img src="images/square.png">
+                        <div class="cart-product-description">
+                            <p>Kristina Dam Oak Table With White Marble Top</p> 
+                            <p class="product-price price">$1249</p>
+                        </div>
+                        <div class="cart-quantity">
+                            <div class="input-group">
+                                <div class="input-group-btn">
+                                    <button id="down" class="btn btn-default" onclick=" down('0','mySecondNumber')">-</button>
+                                </div>
+                                <input type="text" id="mySecondNumber" class="form-control input-number" onkeypress="return onlyNumberKey(event)" value="1" />
+                                <div class="input-group-btn">
+                                    <button id="up" class="btn btn-default" onclick="up('99','mySecondNumber')">+</button>
+                                </div>
+                            </div>
+                            <div class="product-final-price price">$1249</div>
+                        </div>
+                        <button class="delete-btn"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
                 </div>
-                <div class="error-content">
-                    <h5>Sorry, this page could not be found!</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Vestibulum at massa a augue volutpat efficitur ut non odio. Nullam. 
-                    <br><br> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eros sed feugiat aliquet. Nunc. 
-                    </p>
-                    <a href="./Home.html">Go back to Homepage</a>
-                    <h5>Search our site</h5>
-                    <div class="input-group mb-3 search-bar">
-                        <input type="text" class="form-control" placeholder="SEARCH" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <div class="last-procedures">
+                    <div class="coupon-section">
+                        <input type="text" class="form-control" placeholder="Enter Coupon Code">
+                        <button type="button" class="btn btn-outline-secondary apply"><span>APPLY</span></button>
+                    </div>
+                    <div class="final-order">
+                        <div class="order-choice">
+                            <button type="button" class="btn btn-outline-secondary update"><span>UPDATE CART</span></button>
+                            <button type="button" class="btn btn-outline-secondary checkout"><span>PROCEED TO CHECKOUT</span></button>
+                        </div>
+                        <div class="cart-subtotal">
+                            <span>CART SUBTOTAL:</span>
+                            <div class="cart-subtotal-price totals-value price">$3489</div>
+                        </div>
+                        <div class="cart-shipping">
+                            <span><b>SHIPPING AND HANDLING:</b></span>
+                            <div class="shipping">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="option1" value="10" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        <span>Flat Rate:<span class="price"><b> $10.00</b></span></span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="option2" value="0">
+                                    <label class="form-check-label" for="exampleRadios2">
+                                        <span>Free Shipping</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="option3" value="60">
+                                    <label class="form-check-label" for="exampleRadios3">
+                                        <span>International:<span class="price"><b> $60.00</b></span></span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="option4" value="5">
+                                    <label class="form-check-label" for="exampleRadios3">
+                                        <span>Local Delivery:<span class="price"><b> $5.00</b></span></span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="option5" value="0">
+                                    <label class="form-check-label" for="exampleRadios3">
+                                        <span>Local Pickup (Free)</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="total-order">
+                            <span><b>ORDER TOTAL:</b></span>
+                            <div class="total-order-price totals-value price">$3489</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -137,7 +219,8 @@
         <!--FOOTER SECTION-->
         <div class="footer">
             <div class="details">
-                <p> &copy; Copyright
+                <p> 
+                    &copy; Copyright
                     <span id="currentYear">x</span>.
                     <br><br> <b>CONTACT</b> 
                     <br> Headquarters: 
@@ -189,6 +272,6 @@
         </div>
     </div>
 
-    <script src="JS/Home.js"></script>
+    <script src="JS/Cart.js"></script>
 </body>
 </html>

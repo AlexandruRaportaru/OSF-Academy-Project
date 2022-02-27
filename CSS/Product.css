@@ -76,6 +76,17 @@
     position: relative;
 }
 
+.cardigan-big .zoom-btn {
+    color:#84BC22;
+    position: absolute;
+    z-index: 9;
+    font-size: 25px;
+    left: 15px;
+    top: 15px;
+    background-color: transparent;
+    border: 0;
+}
+
 .cardigan-big .image {
     position: absolute;
     width: 100%;
@@ -88,6 +99,59 @@
 .cardigan-big .active {
     display: block;
 }
+
+.modal-image {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 99; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+.modal-custom {
+    margin: auto;
+    display: block;
+    min-width: 600px;
+}
+
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(1)}
+    to {-webkit-transform:scale(2)}
+}
+@keyframes zoom {
+    from {transform:scale(0.4)}
+    to {transform:scale(1)}
+}
+
+@-webkit-keyframes zoom-out {
+    from {transform:scale(1)}
+    to {transform:scale(0)}
+}
+@keyframes zoom-out {
+    from {transform:scale(1)}
+    to {transform:scale(0)}
+}
+
+.modal-custom {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+    background-color: transparent !important;
+}
+
+.out {
+    animation-name: zoom-out;
+    animation-duration: 0.6s;
+}
+
 
 .cardigan-small {
     display: flex;
@@ -126,6 +190,10 @@
     border: 2px solid #E8E2D6;
     width: 154px !important;
     margin-bottom: 20px;
+}
+
+.bootstrap-select .dropdown-toggle:focus {
+    outline: none !important;
 }
 
 .cardigan-details .dropdown-menu {
@@ -181,6 +249,23 @@
     color: #3B5A9A !important;
 }
 
+.cardigan-details .gray.fa-cirlce::before {
+    color: #585C5C !important;
+}
+
+.cardigan-details .green.fa-circle::before {
+    color: #82AE1A !important;
+}
+
+.cardigan-details .red.fa-circle::before {
+    color: #EA1A17 !important;
+}
+
+.cardigan-details .blue.fa-circle::before {
+    color: #3B5A9A !important;
+}
+
+
 .dropdown-menu li:hover {
     background-color: #E8E2D6 !important;
 }
@@ -191,7 +276,7 @@
 }
 
 .cardigan-buttons .input-group {
-    width: 108px;
+    width: 110px;
 }
 
 .input-number {

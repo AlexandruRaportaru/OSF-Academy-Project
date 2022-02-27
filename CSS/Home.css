@@ -63,7 +63,7 @@ body {
     border-radius: 0px !important;
     transition: 0s !important;
     width: 1280px !important;
-    left: -366px;
+    left: -360px;
 }
 
 .navbar .dropdown-container {
@@ -167,7 +167,7 @@ li {
     color: #55514e;
     opacity: 0.6;
     width: 100%;
-    padding: 7px 10px;
+    padding-top: 7px;
     letter-spacing: -1px;
 }
 
@@ -190,6 +190,43 @@ li {
     display: flex;
     padding: 0 15px 10px 15px;
 }
+
+.navbar-icon .cart-icon {
+    margin-top: 18px;
+}
+
+.navbar-icon .circle-cart {
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #84BC22;
+    position: absolute;
+    top: 18px;
+    right: 56px;
+    z-index: 11;
+    font-size: 10px;
+    color: #84BC22;
+    font-weight: bold;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.navbar-icon .circle-heart {
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #84BC22;
+    position: absolute;
+    top: 18px;
+    right: 112px;
+    z-index: 11;
+    font-size: 10px;
+    color: #84BC22;
+    font-weight: bold;
+    background-color: #ffffff;
+    text-align: center;
+}
+
 
 /* ---------------------------------------------------- INTRO SECTION ----------------------------------------------------- */
 
@@ -347,10 +384,11 @@ li {
 .popular-items-title::before , .popular-items-title::after {
     content: "";
     display: inline-block;
-    background-color: #55514e;
+    background-color: #4a555e;
     height: 2px;
     width: 455px;
     margin-bottom: 7.5px;
+    opacity: 0.5;
 }
 
 .popular-items .products {
@@ -360,13 +398,51 @@ li {
     justify-items: center;
     padding-bottom: 50px;
     align-items: center;
-    overflow: hidden;
 }
 
 .popular-items .products-image {
     position: relative;
     display: flex;
     justify-content: center;
+}
+
+.products-wrapper {
+    position: relative;
+}
+
+.products-wrapper .products-background {
+    position: absolute;
+    background: linear-gradient(rgba(92, 255, 160, 0.8), rgba(66, 179, 103, 0.8));
+    top: 1px;
+    z-index:9 ;
+    width: 271px;
+    height: 365px;
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.products-background button {
+    background-color: white;
+    height: 84px;
+    width: 84px;
+    border: none;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.products-background button i {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.products-background button .fa-plus {
+    color: #84BC22;
+}
+
+.products-background button .fa-heart {
+    color: #E73C68;
 }
 
 .popular-items .products-image div {
@@ -379,6 +455,10 @@ li {
 .popular-items .special-product {
     display: flex;
     justify-content: center;
+}
+
+.popular-items .special-product a {
+    text-decoration: none;
 }
 
 .popular-items .products-image div p {
@@ -401,6 +481,10 @@ li {
     color: #32C777 !important;
 }
 
+.popular-items .products-image .left:hover {
+    background-color: white;
+}
+
 .popular-items .products-image .right {
     width: 110px;
     color: black;
@@ -419,19 +503,46 @@ li {
     border-width: 2px;
 }
 
-.popular-items .products-image:nth-child(9), .products-image:nth-child(10), .products-image:nth-child(11), .products-image:nth-child(12) {
+.popular-items .photos:nth-child(9), 
+.popular-items .photos:nth-child(10), 
+.popular-items .photos:nth-child(11), 
+.popular-items .photos:nth-child(12) {
     display: none;
+}
+
+.message {
+    position: relative;
+}
+
+.message::after {
+    content: '';
+    position:absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(rgba(255, 92, 151, 0.7),rgba(117, 102, 255, 0.7));
+    border-radius: 5px;
 }
 
 #message {
     padding-right: 70px;
-    padding-bottom: 22px;
+    padding-bottom: 66px;
+    z-index: 2;
 }
 
 #message p {
     color: #f4f4f4;
     text-align: start;
     width: 140px;
+}
+
+#message .message-text {
+    display: flex;
+    padding-bottom: 18px;
+    align-items: baseline;
+}
+
+#message .message-text p {
+    padding-left: 10px;
 }
 
 .loadMoreButton {
@@ -447,8 +558,8 @@ li {
 }
 
 .loadMoreButton .btn:hover {
-    color: #55514e !important;
-    background-color: #f4f4f4 !important;
+    color: #ffffff !important;
+    background-color: #84BC22 !important;
 }
 
 .loadMoreButton .btn span {
@@ -719,7 +830,7 @@ form i {
     cursor: pointer;
     z-index: 21;
     position: absolute;
-    bottom: 174px;
+    bottom: 171px;
     right: 40px;
 }
 

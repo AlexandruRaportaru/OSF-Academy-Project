@@ -137,6 +137,7 @@
 
 .main-results {
     padding-top: 30px;
+    font-size: 17px;
 }
 
 .services-products {
@@ -180,7 +181,8 @@
 }
 
 .services-products .products-image .price {
-    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #c4c4c4;
 }
 
 .loadMoreServices {
