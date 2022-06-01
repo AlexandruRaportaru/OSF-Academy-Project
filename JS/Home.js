@@ -55,19 +55,19 @@ $('.cookie-disclaimer').hide();
 // PASSWORD VIEW IN MODAL //
 
 const togglePassword = document.querySelector("#togglePassword");
-        const password = document.querySelector("#password");
+    const password = document.querySelector("#password");
 
-        togglePassword.addEventListener("click", function () {
-            const type = password.getAttribute("type") === "password" ? "text" : "password";
-            password.setAttribute("type", type);
-            
-            this.classList.toggle("bi-eye");
-        });
+    togglePassword.addEventListener("click", function () {
+        const type = password.getAttribute("type") === "password" ? "text" : "password";
+        password.setAttribute("type", type);
+        
+        this.classList.toggle("bi-eye");
+    });
 
-        // prevent form submit
-        const form = document.querySelector("form");
-        form.addEventListener('submit', function (e) {
-        });
+    // prevent form submit
+    const form = document.querySelector("form");
+    form.addEventListener('submit', function (e) {
+    });
 
 
 // CART //
